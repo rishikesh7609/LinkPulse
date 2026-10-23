@@ -1,0 +1,44 @@
+node_modules/
+.npm-cache/
+dist/
+coverage/
+*.tsbuildinfo
+.env
+.env.*
+!.env.example
+!**/.env.example
+*.log
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# Private keys and certificates
+*.pem
+*.key
+*.p12
+*.pfx
+*.p7b
+*.p7c
+*.crt
+*.cer
+*.der
+
+# Local database backups and dumps (keep SQL migrations trackable)
+*.dump
+*.pgdump
+*.backup
+*.bak
+*.sql.gz
+*.sql.xz
+*.sqlite
+*.sqlite3
+*.db
+
+# Temporary and editor swap files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.~lock.*

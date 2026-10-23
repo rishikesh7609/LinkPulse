@@ -1,0 +1,34 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1792591367833,
+      "tag": "0000_links",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1792682409513,
+      "tag": "0001_click_events",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1792701987242,
+      "tag": "0002_auth_ownership",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1792702214644,
+      "tag": "0003_normalized_email_constraint",
+      "breakpoints": true
+    }
+  ]
+}

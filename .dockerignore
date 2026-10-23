@@ -1,0 +1,39 @@
+node_modules
+dist
+coverage
+.git
+.env
+**/.env
+.env.*
+**/.env.*
+
+# Private keys and certificates
+*.pem
+*.key
+*.p12
+*.pfx
+*.p7b
+*.p7c
+*.crt
+*.cer
+*.der
+
+# Local database backups and dumps (keep SQL migrations in the build context)
+*.dump
+*.pgdump
+*.backup
+*.bak
+*.sql.gz
+*.sql.xz
+*.sqlite
+*.sqlite3
+*.db
+
+# Logs, temporary files, and editor swap files
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.~lock.*

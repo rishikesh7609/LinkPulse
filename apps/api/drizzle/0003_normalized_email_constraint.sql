@@ -1,0 +1,1 @@
+ALTER TABLE "users" ADD CONSTRAINT "users_email_normalized" CHECK ("users"."email" = lower("users"."email") AND length(trim("users"."email")) BETWEEN 3 AND 254);

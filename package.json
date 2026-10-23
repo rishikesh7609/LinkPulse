@@ -1,0 +1,33 @@
+{
+  "name": "linkpulse",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "concurrently -k -n api,web -c blue,green \"npm run dev --workspace @linkpulse/api\" \"npm run dev --workspace @linkpulse/web\"",
+    "build": "npm run build --workspace @linkpulse/api && npm run build --workspace @linkpulse/web",
+    "typecheck": "npm run typecheck --workspace @linkpulse/api && npm run typecheck --workspace @linkpulse/web",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "npm run test --workspace @linkpulse/api && npm run test --workspace @linkpulse/web"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@types/node": "^24.10.1",
+    "concurrently": "^9.2.1",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "globals": "^16.5.0",
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.4"
+  },
+  "allowScripts": {
+    "argon2@0.45.1": true
+  }
+}
