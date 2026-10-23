@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://linkpulse-api-19z1.onrender.com/api/:path*"
+    }
+  ]
+}
